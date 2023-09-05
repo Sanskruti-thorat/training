@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/bookcss.css">
+   
+</head>
+<body>
+   <div class="register">
+    <h1>Register Here!</h1>
+    <form action=""  onsubmit="return validate()">
+        <div class="row">
+            <div>
+                <p>
+                    Full Name:
+                    </p>
+                    <input type="text" name="name" placeholder="Full Name" id="name" > 
+                    <span id="Name" class="span-text"></span>
+                </div>
+                <div>
+                    <p>
+                        Email:
+                            </p>
+                            <input type="text" name="email" placeholder="Email@.com" id="email" >
+                            <span id="Email" class="span-text"></span>
+                </div>
+        </div>
+        <div class="row">
+            
+            <div>
+                     <p>
+                     Password:
+                    </p>
+                    <input type="password" name="password" placeholder="Password" id="pass">
+                    <span id="Pass" class="span-text"></span>
+                   
+            </div>
+            <div>
+                <p>
+             Mobile no:
+                </p>
+                 <input type="text" name="number" placeholder="Number" id="num">
+                 <span id="Num" class="span-text"></span>
+            </div>
+        </div>
+        <input class="btn" type="submit" value="Register" placeholder="Register">
+
+    </form>
+   </div>
+   
+   <script src="/js/validate.js"></script>
+   
+</body>
+</html>

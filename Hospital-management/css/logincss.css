@@ -1,0 +1,125 @@
+
+*{
+margin: 0;
+
+}
+body{
+    display: flex;
+    font-family: sans-serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #0081C9;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+   background-color: #0081C9;
+    margin: auto;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+
+.menu{
+    display: flex;
+}
+ .menu li{
+list-style: none;
+margin: 0 10px;
+
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 9px;
+    font-weight: 400;
+    transition: 0.3s all;
+}
+.menu li a:hover{
+   color: #b4a6a6;
+}
+.line-hover::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition:width .3s;
+    background-color: #fff;
+}
+.line-hover:hover:after{
+width: 100%;
+transition:width .3s;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/loginbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container form{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    /* background-color: tomato; */
+    background-image: linear-gradient(#003e7123,hsla(209, 93%, 32%, 0.812));
+    border-radius: 50px;
+  
+   
+}
+
+.container form h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    margin-top: 30px;
+    
+
+} 
+.container form .form-box{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+}
+.btn{
+  
+    padding: 10px;
+    width: 30%;
+    border-radius:5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-color: #148de260;
+   background-color: rgb(21, 132, 192);
+   color: #fff;
+}
+
+  
+.form-box {
+    display: grid;
+    text-align: left;
+    color:#fff;
+    visibility: visible;
+
+}

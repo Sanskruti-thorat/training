@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/logincss.css">
+    <title>Login</title>
+</head>
+<body><nav>
+    <div class="Navbar">
+        <div class="logo"><a href="">MediCare</a></div>
+        <ul class="menu">
+           <li><a class="line-hover" href="/Home.html">Home</a></li>
+           <li><a class="line-hover" href="/doctor.html">Doctors</a></li>
+           <li><a class="line-hover" href="/about.html">About us</a></li>
+           <li><a class="line-hover" href="/login.html">Login</a></li>
+           <li><a class="line-hover" href="/Book.html">Register</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <section class="container">
+    <div >
+    <form action="">
+        <h1 id="demo">LOGIN</h1>        
+        <div class="form-box" id="form-box1"> 
+        
+      <label for="">UserName:</label>
+      <input type="text" placeholder="UserName" required id="text">
+     </div>
+     <div class="form-box" id="form-box"> 
+        <label for="">Password:</label>
+        <input type="password" placeholder="password" required>
+       </div>
+       <input type="submit" onclick="sumbit()" class="btn">
+    </form>    
+   
+    </div>
+
+
+    <script>
+        // tried internal js for login and external for registrations 
+
+        // code works but it gets refreshed quickly 
+        function sumbit(){
+            var user = document.getElementById('text').value;
+            
+            document.getElementById("demo").innerHTML = "Welcome!" + user;
+            document.getElementById('form-box1').style. visibility = "hidden";
+            document.getElementById('form-box').style. visibility = "hidden";
+
+            alert("Successfully logged in!");     
+            
+     
+        
+        }
+    </script>
+</body>
+</html>
