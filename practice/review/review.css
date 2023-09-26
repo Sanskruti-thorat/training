@@ -1,0 +1,40 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    background-color:#e93b81c6 ;
+    height: 100vh;
+    text-align: center;
+   
+}
+h1{
+    font-size: 40px;
+    color: beige;
+    
+}
+.review{
+    padding: 70px 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(42, 39, 39);
+    background-color:#F5ABC9;
+    width: 500px;
+    border-radius: 10px;
+    position: absolute;
+    top:25%;
+    left: 30%;
+}
+.btn{
+    padding: 5px 8px;
+    margin-top: 10px;
+    background-color: rgb(235, 144, 144);
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
