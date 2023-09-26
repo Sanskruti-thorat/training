@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radius</title>
+    <style>
+        button{
+            background-color: blue;
+            color: #fff;
+            padding: 5px 5px;
+            border-radius: 5px;
+            border: none;
+
+        }
+        input{
+            font-size: 16px;
+            background-color: antiquewhite;
+        }
+        p{
+            background-color: beige;
+        }
+        .radius{
+            height: 200px;
+            width: 300px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="radius">
+        <p>
+            Enter Radius :
+        </p>
+      <input type="text" name="" id="text">
+     <button type="button" onclick="cal()">Calculate</button>
+     <p >
+     <h4>Area:</h4><p id="area"></p>
+
+         <h4>Circumference:</h4><p id="circumfer"></p>
+     </p>
+    </div>
+    <script>
+        function cal() {
+            var radius=  document.getElementById('text').value;
+            var area = 3.14 * radius * radius;
+            var circum= 2 * 3.14 * radius;
+
+            document.getElementById('area').innerHTML = area;
+            document.getElementById('circumfer').innerHTML = circum;
+        }
+    </script>
+</body>
+</html>

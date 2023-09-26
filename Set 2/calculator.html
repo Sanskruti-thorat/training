@@ -1,0 +1,124 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        .bg{
+background-color: bisque;
+width: 300px;
+border: 2px solid blueviolet ;
+border-radius: 5px;
+
+
+        }
+        label{
+            font-size: 20px;
+            color: crimson;
+         
+        }
+        input{
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        select{
+            font-size: 20px;
+            margin: 10px 90px;
+        }
+        p{
+            font-size: 30px;
+            padding-left: 100px;
+
+        }
+        button{
+            font-size: 20px;
+            padding: 5px 10px;
+            color: #fff;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-bottom: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <!-- <h1>Calculate Me!!</h1>
+        <div>
+            <label for="num1">Number 1:</label> <input type="text" id="num1">
+            <br>
+
+            <select id="op">
+                <option value="">Select Operator</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+            <br>
+            <label for="num2">Number 2:</label> <input type="text" id="num2">
+            <p>=</p><p id="res"></p>
+            <br>
+            <button onclick="Calculate()">Calculate</button>
+        </div> -->
+        <!-- <h1>Caculate me 2 !!</h1>
+       <form action="" name="forms">
+        <input type="text" name="answer" id="">
+        <br>
+        <input type="button" name="1" value="1" id="" onclick="forms.answer.value += '1'">
+        <input type="button" name="" value="2" id="" onclick="forms.answer.value += '2'">
+        <input type="button" name="1" value="3" id="" onclick="forms.answer.value += '3'">
+        <br>
+        <input type="button" name="1" value="4" id="" onclick="forms.answer.value += '4'">
+        <input type="button" name="1" value="5" id="" onclick="forms.answer.value += '5'">
+        <input type="button" name="1" value="6" id="" onclick="forms.answer.value += '6'">
+        <br>
+        <input type="button" name="1" value="7" id="" onclick="forms.answer.value += '7'">
+        <input type="button" name="1" value="8" id="" onclick="forms.answer.value += '8'">
+        <input type="button" name="1" value="9" id="" onclick="forms.answer.value += '9'">
+        <br>
+        <input type="button" name="1" value="0" id="" onclick="forms.answer.value += '0'">
+        <input type="button" name="1" value="*" id="" onclick="forms.answer.value += '*'">
+        <input type="button" name="1" value="+" id="" onclick="forms.answer.value += '+'">
+        <br>
+        <input type="button" name="1" value="/" id="" onclick="forms.answer.value += '/'">
+        <input type="button" name="1" value="-" id="" onclick="forms.answer.value += '-'">
+        <input type="button" name="1" value="=" id="" onclick="forms.answer.value = eval(forms.answer.value )">
+        <br>
+        <input type="button" name="ac" value="Ac" id="" onclick="forms.answer.value = ''">
+
+        
+       </form> -->
+    </div>
+
+    <script>
+        function Calculate() {
+            const Number1 = parseFloat( document.getElementById('num1').value);
+            const Number2 =  parseFloat(document.getElementById('num2').value);
+            const operator =  document.getElementById('op').value;
+            let result = 0;
+
+           
+          if (operator === '+') {
+                result = Number1 + Number2;
+            } else if (operator === '-') {
+                result = Number1 - Number2;
+            } else if (operator === '/') {
+                result = Number1 / Number2;
+            } else if (operator === '*') {
+                result = Number1 * Number2;
+            }
+
+            document.getElementById('res').textContent = result;
+        }
+    </script>
+   
+    
+</body>
+</html>
