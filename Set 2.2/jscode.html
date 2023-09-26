@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js code</title>
+</head>
+<body>
+<h5>Q3</h5>
+<p id="demo"></p>
+<h5>Q4</h5>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<h5>Q5</h5>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<h5>Q6</h5>
+<select  id="demo7">
+    <option value=""></option>
+    <option value="Am">Am</option>
+    <option value="Pm">Pm</option>
+</select>
+<p id="demo8"></p>
+<h5>Q7</h5>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<h5>Q8</h5>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<h5>Q9</h5>
+<p id="demo15"></p>
+<p id="demo16"></p>
+<p id="new"></p>
+<h5>Q10</h5>
+<p id="demo17"></p>
+<p id="demo18"></p>
+<h5>Q11</h5>
+<p id="demo19"></p>
+<h5>Q12</h5>
+<p id="demo20"></p>
+<h5>Q13</h5>
+<p>1. concatanation 
+<br> 2.by using slice 
+<br> 
+</p>
+<p id="demo22"></p>
+<h5>Q14</h5>
+<p id="demo21"></p>
+
+<script>
+let text = "The teacher instructed, 'Don't forget to use the backslash (\\) in the file path!'"
+document.getElementById("demo").innerHTML = text; 
+
+
+
+ let tech1 = "HTML,";
+     tech2 = "CSS, ";
+     tech3 ="and JAvascript";
+  
+     let result1 ="Core frontend technologies are "+ tech1 + " "+ tech2  + " " + tech3; //method1
+     let result2 ="Core frontend technologies are " + tech1.concat(tech2,tech3); //method2
+     document.getElementById("demo2").innerHTML = result1; 
+     document.getElementById("demo3").innerHTML = result2; 
+
+
+     let sent = "this is a string and how to access first and last part of it ";
+         let sent1 = sent.slice(0,5);
+         document.getElementById("demo4").innerHTML = sent1; 
+         let sent2 = sent.substring(10,16);
+         document.getElementById("demo5").innerHTML = sent2; 
+         let sent3 = sent.substr(40);
+         document.getElementById("demo6").innerHTML = sent3; 
+         
+
+
+
+         let gm = "In the morning, we say 'Good Morning!'";
+         let gn = "At night, we say 'Good night'";
+        document.getElementById('demo7').addEventListener('change', function() {
+        let op = document.getElementById('demo7').value;
+  
+         if (op === "Am") {
+              document.getElementById('demo8').innerHTML = gm;
+             } else if (op === "Pm") {
+          document.getElementById('demo8').innerHTML = gn;
+             } else {
+           document.getElementById('demo8').innerHTML = "Select AM or PM";
+             }
+          });
+
+
+
+
+          let spacestring = "   Have a great day!   ";
+          let spacestring2 = spacestring.trim();
+          let spacestring3 = spacestring.trimStart();
+          let spacestring4 = spacestring.trimEnd();
+          document.getElementById('demo9').innerHTML = "full lemgth :"+spacestring.length;
+          document.getElementById('demo10').innerHTML = "trimmed from both sides:"+spacestring2.length;
+          document.getElementById('demo11').innerHTML = "trimmed from start:"+spacestring3.length;
+          document.getElementById('demo12').innerHTML = "trimmed from end :"+spacestring4.length;
+
+
+
+
+
+          let john = "5";
+          john1 = john.padStart(4,"0");
+          john2 = john.padEnd(4,"0");
+
+          document.getElementById('demo13').innerHTML = john1;
+          document.getElementById('demo14').innerHTML = john2;
+
+
+
+          
+
+          let name = "Sanskruti";
+          let smalllet = name.toUpperCase();
+          let  captial = smalllet.toLowerCase();
+          document.getElementById('demo17').innerHTML = smalllet;
+          document.getElementById('demo18').innerHTML = captial;
+
+
+          const inputString = "Uniform Resource Locator";
+          const charCodesarray = [];
+
+        for (let i = 0; i < inputString.length; i++) {
+        const num = inputString[i];
+
+        if (num >= 'A' && num <= 'Z')
+         {
+        charCodesarray.push(num.charCodeAt());
+         } }
+        document.getElementById('demo19').innerHTML = charCodesarray;
+
+
+
+        const codeA = "A".charCodeAt(0);
+        const codeB = "a".charCodeAt(0);
+        const maxcode = Math.max(codeA, codeB);
+        if (maxcode === codeA) {
+        document.getElementById('demo20').innerHTML = "Character code of 'A' comes before 'a'";} 
+         else {
+         document.getElementById('demo20').innerHTML = "Character code of 'a' comes before 'A'";}
+
+
+
+
+         const once = "Okay ";
+         const twice = once.concat(once);
+         document.getElementById('demo21').innerHTML = twice;
+
+         let Name = "Sanskruti";
+         let surname = "thorat";
+         const fullname = `Welcome ${Name} ${surname}`;  
+         document.getElementById('demo22').innerHTML = fullname;
+         
+           
+         let string = "find 'me' in this whole sentence";
+           let index = string.indexOf("me");
+          document.getElementById("demo15").innerHTML = index;
+
+
+          let laststring = "Please locate where 'locate' occurs!";
+         let newindex = laststring.lastIndexOf("locate");
+         document.getElementById("demo16").innerHTML = newindex;
+
+         let string2 = "Please find where 'me'!";
+          let index1 = text.search(/me/);
+         document.getElementById("new").innerHTML = index1;
+
+
+
+
+
+
+</script>
+</body>
+</html> 
