@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+</head>
+<body>
+    <p>
+        <h2>0.1 + 0.19 = </h2>
+        <h2 id="first"></h2>
+    </p>
+    <p>
+        <h2>"0.10" * "10"+ "2"/ "0.9" - "0.67" = </h2>
+        <h2 id="second"></h2>
+    </p>
+    <p>
+        <h2>a=1 , b=1 ,y = new number(1) , z=new number(1): </h2>
+        <h2 >
+            <h4 id="id1"></h4>
+            <h4 id="id2"></h4>
+            <h4 id="id3"></h4>
+            <h4 id="id4"></h4>
+            <h4 id="id5"></h4>
+            <h4 id="id6"></h4>
+
+        </h2>
+    </p>
+    
+</body>
+
+<script>
+    const first = document.getElementById("first");
+    const second = document.getElementById("second"); 
+    const id1 = document.getElementById("id1"); 
+    const id2 = document.getElementById("id2");  
+    const id3 = document.getElementById("id3"); 
+    const id4 = document.getElementById("id4"); 
+    const id5 = document.getElementById("id5"); 
+    const id6 = document.getElementById("id6"); 
+  
+
+    // 1st 
+    var result1 = 0.1 + 0.19;
+    var formattedResult1 = result1.toFixed(2);
+    first.innerHTML = formattedResult1;
+    // 2nd 
+    var result2 = 0.10 * 10 + 2 / 0.9 - 0.67;
+    var formattedResult2 = result2.toFixed(2);
+    second.innerHTML = formattedResult2;
+    // 3rd
+    var a = 1;
+var b = 1;
+var y = new Number(1);
+var z = new Number(1);
+
+var result1 = a == b;   
+var result2 = a === b;  
+
+var result3 = a == y;   
+var result4 = a === y;  
+
+var result5 = y == z;   
+var result6 = y === z;
+
+
+id1.innerHTML = "a == b: " + result1;   
+id2.innerHTML = "a === b: " + result2;  
+
+id3.innerHTML = "a == y: " + result3;   
+id4.innerHTML = "a === y: " + result4;  
+
+id5.innerHTML = "y == z: " + result5;   
+id6.innerHTML = "y === z: " + result6;
+</script>
+</html;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Precision</h1>
+<p>In Javascript, numbers are 64 bit floating number and does not defien short, long floating-point and all , js numbers are stored in bits 0 to 51. JavaScript uses the IEEE 754 standard for representing numbers as double-precision 64-bit values, which provides a certain level of precision but can lead to rounding errors in some cases.  </p>
+<p>
+    <h2>to fixed</h2>
+    <p id="fix"></p>
+</p>
+<p>
+    <h2>to exponential</h2>
+    <p id="expo"></p>
+</p>
+<p>
+    <h2>to precision</h2>
+    <p id="pre"></p>
+</p>
+</body>
+<script>
+  const fix = document.getElementById("fix");
+  const expo = document.getElementById("expo");
+  const pre= document.getElementById("pre");
+    var num1 = 12345.6789;
+        var exponentialFormat = num1.toExponential(2);
+        expo.innerHTML =  "toExponential(2): " + exponentialFormat;
+
+        // Example using toFixed()
+        var num2 = 123.456789;
+        var fixedFormat = num2.toFixed(2);
+        fix.innerHTML = "toFixed(2): " + fixedFormat;
+
+        // Example using toPrecision()
+        var num3 = 123.456789;
+        var precisionFormat = num3.toPrecision(7);
+       pre.innerHTML = "toPrecision(5): " + precisionFormat;
+</script>
+</html>

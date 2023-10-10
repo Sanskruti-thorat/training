@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <form action="" method="">
+    
+        <label >Name:</label>
+        <input type="text" placeholder="Enter Name">
+        <br>
+
+   
+        <label>New Password:</label>
+        <input type="password" id="password_input" name="password_input" required minlength="8">
+        <br>
+
+
+        <label>Email Input:</label>
+        <input type="email">
+        <br>
+
+    
+        <label>Phone Number:</label>
+        <input type="number">
+        <br>
+
+        <label >Date of birth:</label>
+        <input type="date" >
+        <br>
+
+        
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Known Technologies:</legend>
+            <input type="checkbox" >
+            <label >ReActjs</label>
+            <input type="checkbox">
+            <label >Angular</label>
+        </fieldset>
+        <br/>
+        <label for="message">Tell me about yourself:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+        <br>
+
+        
+        <label for="country">Select Country:</label>
+        <select >
+            <optgroup label=India">
+                <option value="Goa">United States</option>
+                <option value="Delhi">Canada</option>
+            </optgroup>
+            <optgroup label="North America">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="uk">United Kingdom</option>
+                <option value="germany">Germany</option>
+            </optgroup>
+            <optgroup label="Australia">
+                <option value="australia">Australia</option>
+            </optgroup>
+        </select>
+        <br/>
+        <label >Select a fruit:</label>
+        <input list="fruits"  >
+        <datalist id="fruits">
+            <option value="Apple">
+            <option value="Banana">
+            <option value="Orange">
+            <option value="Grapes">
+            <option value="Mango">
+        </datalist>
+        <br>
+        <output >10</output>
+        <br>
+
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
